@@ -1,0 +1,128 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    display: flex;
+    justify-content: center;
+    padding: 60px 15px;
+}
+
+.auth-wrapper {
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+}
+
+.brand h1 {
+    margin: 0 0 6px 0;
+    font-size: 24px;
+    color: #1e293b;
+}
+
+.brand p {
+    margin: 0 0 25px 0;
+    color: #64748b;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 30px 28px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e293b;
+    margin: 16px 0 6px 0;
+}
+
+label:first-child { margin-top: 0; }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #d7dce3;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+.role-toggle {
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.role-btn {
+    flex: 1;
+    padding: 11px;
+    border-radius: 8px;
+    border: 1px solid #d7dce3;
+    background: #ffffff;
+    color: #1e293b;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.role-btn.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+.primary-btn {
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-btn:hover { background: #1d4ed8; }
+
+.link {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link:hover { text-decoration: underline; }
+
+.footer-text {
+    margin-top: 22px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 6px;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.msg {
+    margin: 8px 0 0 0;
+    font-size: 13px;
+    min-height: 16px;
+}
+
+.msg.error { color: #dc2626; }
+.msg.success { color: #16a34a; }
