@@ -1,0 +1,195 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1e293b;
+}
+
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9f0;
+    padding: 14px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .left { display: flex; align-items: center; gap: 10px; }
+.brand-name { font-weight: bold; font-size: 17px; color: #1e293b; }
+.page-title { color: #64748b; font-size: 14px; }
+.navbar .right { display: flex; align-items: center; gap: 16px; }
+.navbar .user-name { font-size: 14px; color: #334155; }
+
+.exit-btn {
+    padding: 7px 14px;
+    border: 1px solid #d7dce3;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 0 20px 60px 20px;
+}
+
+h1 { font-size: 22px; margin: 0 0 4px 0; }
+.subtitle { color: #64748b; font-size: 14px; margin: 0 0 16px 0; }
+
+.progress-bar-track {
+    background: #e5e9f0;
+    border-radius: 6px;
+    height: 8px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.progress-bar-fill {
+    background: #2563eb;
+    height: 100%;
+    width: 0%;
+    transition: width 0.2s ease;
+}
+
+.progress-label {
+    text-align: right;
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.q-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 26px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.q-top { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 22px; }
+
+.q-number {
+    background: #2563eb;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.q-text { font-size: 16px; font-weight: bold; }
+
+.option {
+    border: 1px solid #e5e9f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.option:hover { border-color: #93b4f5; }
+
+.option.selected {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+.option .letter {
+    background: #f1f5f9;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.option.selected .letter { background: #2563eb; color: #fff; }
+
+.quiz-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #d7dce3;
+    background: #ffffff;
+    color: #334155;
+}
+
+.nav-btn.next {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+}
+
+.nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.dots { display: flex; gap: 8px; }
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d7dce3;
+}
+
+.dot.active { background: #2563eb; }
+
+.list-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px 22px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-card h3 { margin: 0 0 4px 0; font-size: 15px; }
+.list-card p { margin: 0; color: #64748b; font-size: 13px; }
+
+.start-btn {
+    padding: 9px 18px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.result-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.result-score { font-size: 42px; font-weight: bold; color: #2563eb; margin: 10px 0; }
